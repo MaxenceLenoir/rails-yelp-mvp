@@ -1,0 +1,15 @@
+<h1 class="mt-2">Restaurants</h1>
+
+<div class="my-grid">
+  <% @restaurants.each do |restaurant| %>
+    <div class="card bg-dark border-warning grid-col my-2">
+      <div class="card-body">
+        <h5 class="card-title text-warning"><i class="fas fa-utensils"></i> <%= restaurant.name %></h5>
+        <h6 class="card-subtitle mb-4 text-muted"><%= restaurant.address %></h6>
+        <div class="card-link">
+          <%= link_to "See details", restaurant_path(restaurant)%>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

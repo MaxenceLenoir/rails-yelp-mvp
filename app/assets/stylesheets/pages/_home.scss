@@ -1,1 +1,21 @@
 // Specific CSS for your home-page
+.my-grid > .card {
+  box-shadow: 5px 5px 5px rgba(175, 169, 169, 0.486);
+  position: relative;
+}
+
+.my-grid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-col {
+  grid-column: 1fr;
+}
+
+.grid-col > .card-body > .card-link{
+  position: absolute;
+  bottom: 5px; left: 5px;
+}
